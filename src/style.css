@@ -1,0 +1,262 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+}
+
+.container, .header, .footer {
+    padding: 0 6vw;
+}
+
+section {
+    padding: 32px 0px;
+    border: 1px solid black;
+}
+
+button {
+    min-width: 200px;
+    padding: 16px;
+    font-size: 22px;
+}
+
+/* Typography */
+
+h1 {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1;
+}
+
+p, a, ul, li, span, ::placeholder {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* 
+    Header 
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.headerLogo {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.navItemContainer {
+    font-size: 22px;
+}
+
+/* 
+    Hero Section
+*/
+
+.heroSection {
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heroInfoContainer {
+    flex-basis: 40vw;
+}
+
+.heroImage {
+    width: 200px;
+}
+
+/* 
+    Menu
+*/
+
+.menuSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.menuItemsContainer {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.menuItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menuItemImage {
+    width: 70%;
+}
+
+.menuItemName {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* 
+    Reviews Section
+*/
+
+.reviewsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 100px 50px;
+}
+
+.reviewImage {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.reviewName {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+}
+
+.reviewText {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+/* Gallery Section */
+
+.gallerySection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.galleryItem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.galleryItemPhoto {
+    width: 300px;
+}
+
+/* Contact Form */
+
+.contactForm {
+    display: grid;
+    grid-template-columns: 300px;
+    /* grid-template-rows: repeat(4, 1fr); */
+    justify-content: center;
+    gap: 32px;
+}
+
+.formField {
+    padding: 8px;
+    height: 64px;
+}
+
+.formTextArea {
+    height: 128px;
+    resize: vertical;
+}
+
+/* Footer */
+
+.footer {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+}
+
+.footerInfoContainer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footerContactsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footerIcon {
+    width: 30px;
+}
+
+.footerText {
+    text-decoration: none;
+    color: black;
+}
+
+.footerAddress {
+    display: inline-block;
+}
+
+.footerSocialContainer {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footerSocialIcon {
+    width: 60px;
+}
+
+.footerMapContainer {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerMap {
+    min-width: 300px;
+    padding: 32px;
+}
+
+.footerCopyrightContainer {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+
